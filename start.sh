@@ -1,3 +1,4 @@
-#!/bin/bash
-
-/usr/sbin/nginx
+docker run \
+  --name my-custom-nginx-container \
+  -v ./nginx.conf:/etc/nginx/nginx.conf:ro \
+  -d myhost-nginx
