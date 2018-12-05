@@ -9,4 +9,4 @@ docker rm myhost-nginx;
 docker run \
   --name myhost-nginx \
   -v $currentDir/nginx.conf:/etc/nginx/nginx.conf:ro \
-  -d nginx
+  nginx
