@@ -9,4 +9,5 @@ docker rm myhost-nginx;
 docker run \
   --name myhost-nginx \
   -v $currentDir/nginx.conf:/etc/nginx/nginx.conf:ro \
+  -p 80:80 \
   nginx
